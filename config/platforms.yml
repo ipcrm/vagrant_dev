@@ -1,0 +1,14 @@
+---
+platforms:
+  centos7:
+    sync_method: rsync
+    roles:
+      - posix_agent_standalone
+
+  server2012:
+    communicator: winrm
+    ssh_disabled: true
+    guest_type: windows
+    roles:
+      - windows_agent_standalone
+

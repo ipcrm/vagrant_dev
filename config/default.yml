@@ -1,0 +1,14 @@
+---
+defaults:
+  ssh_username: vagrant
+  communicator: ssh
+  winrm_username: vagrant
+  winrm_password: vagrant
+  primary: false
+  autoup: true
+  cpus: 1
+  mem: 512
+
+instance_defaults:
+  box: 'dummy'
+  sync_method: none

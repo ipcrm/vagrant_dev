@@ -1,0 +1,13 @@
+---
+instances:
+  centos.example.lan:
+    platform: centos7
+    box: 'puppetlabs/centos-7.2-64-nocm'
+    shared_folders:
+      '/tmp': '/tmp/downloads'
+    tcp_ports:
+      '80': '10000'
+
+  server2012r2a.example.lan:
+    platform: server2012
+    box: 'windows-server-2012r2-v3'
